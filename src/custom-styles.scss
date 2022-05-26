@@ -1,0 +1,80 @@
+/* You can add global styles to this file, and also import other style files */
+
+// Standard CSS normalize, comment out if not required or using a different module
+
+@use "~minireset.css/minireset";
+@use "igniteui-angular/theming" as *;
+
+@include core();
+
+$my-h2:type-style(
+  $font-weight: 600,
+  $font-size: 1.9rem,
+  $letter-spacing: 0,
+  $line-height: 1.5,
+  $margin-bottom: 0.5rem
+);
+$my-h3:type-style(
+  $font-weight: 600,
+  $font-size: 1.3rem,
+  $letter-spacing: 0.03125rem
+);
+$my-subtitle-1:type-style(
+  $font-size: 1.1rem,
+  $letter-spacing: 0.009375rem,
+  $line-height: 2
+);
+$my-subtitle-2:type-style(
+  $font-size: 1.1rem
+);
+$my-body-1:type-style(
+  $line-height: 1.8,
+  $font-size: 1rem,
+  $font-style: normal,
+  $letter-spacing: 0.03125rem
+);
+
+$bootstrap-type-scale: extend($bootstrap-type-scale, (
+  'h2': $my-h2,
+  'h3': $my-h3,
+  'subtitle-1': $my-subtitle-1,
+  'subtitle-2': $my-subtitle-2,
+  'body-1': $my-body-1
+));
+
+@include typography($font-family: 'Noto Sans JP', $type-scale: $bootstrap-type-scale);
+
+$custom-palette: palette(
+  $primary: #007bff,
+  $secondary: #6c757d,
+  $surface: #242939,
+  $error: #dc3545,
+  $success: #28a745,
+  $warn: #ffc107,
+  $info: #17a2b8,
+  $grays: #ffffff,
+  $variant: 'bootstrap');
+@include theme($palette: $custom-palette, $schema: $dark-bootstrap-schema);
+
+html {
+  font-size:90%;
+}
+
+body {
+  background: hsla(var(--igx-surface-500));
+  color: var(--igx-surface-500-contrast);
+}
+
+html, body {
+  height: 100%;
+}
+
+.igx-typography {
+  h1, h2, h3, h4, h5, h6, p, .igx-typography__body-1 {
+    margin: 0;
+  }
+}
+
+.outer-wrapper > *:not(router-outlet) {
+  width: 100%;
+}
