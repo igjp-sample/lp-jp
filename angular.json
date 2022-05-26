@@ -31,7 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/custom-styles.scss"
+              "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/hammerjs/hammer.min.js"
@@ -97,7 +97,7 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "styles": [
-              "src/custom-styles.scss"
+              "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/hammerjs/hammer.min.js"
