@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class UitoolsComponent {
 
-  // #TODO メタタグ書き換え
+  // #TODO メタタグ書き換える
 
 }
