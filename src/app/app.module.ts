@@ -3,16 +3,16 @@ import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Test1Component } from './test1/test1.component';
-import { IgxButtonModule, IgxRippleModule, IgxIconModule, IgxAvatarModule, IgxExpansionPanelModule, IgxNavbarModule } from 'igniteui-angular';
+import { UitoolsComponent } from './uitools/uitools.component';
+import { IgxButtonModule, IgxRippleModule, IgxIconModule, IgxExpansionPanelModule, IgxAvatarModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
-import { Test2Component } from './test2/test2.component';
+import { Test1Component } from './test1/test1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Test1Component,
-    Test2Component
+    UitoolsComponent,
+    Test1Component
   ],
   imports: [
     BrowserModule,
@@ -22,10 +22,9 @@ import { Test2Component } from './test2/test2.component';
     IgxButtonModule,
     IgxRippleModule,
     IgxIconModule,
-    IgxAvatarModule,
     IgxExpansionPanelModule,
-    IgxNavbarModule,
-    FormsModule
+    FormsModule,
+    IgxAvatarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
