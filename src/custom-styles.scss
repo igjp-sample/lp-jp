@@ -78,4 +78,7 @@ html, body {
 
 .outer-wrapper > *:not(router-outlet) {
   width: 100%;
+  @media screen and (max-width: 980px) {
+    overflow-x: hidden;
+  }
 }
