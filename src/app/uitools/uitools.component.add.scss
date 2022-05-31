@@ -62,6 +62,9 @@ button {
 .image_1 {
   opacity: .5;
 }
+.image_2 {
+  object-fit: contain;
+}
 ::ng-deep {
   .igx-typography {
     .expansion-panel {
