@@ -1,4 +1,12 @@
+[build]
+  publish = "."
+
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/newlp/*"
+  to = "/newlp/:splat"
+  status = 200
+
+[[redirects]]
+  from = "/uitools/*"
+  to = "/uitools/:splat"
   status = 200
