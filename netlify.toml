@@ -2,6 +2,11 @@
   publish = "."
 
 [[redirects]]
+  from = "/"
+  to = "/newlp/"
+  status = 301
+
+[[redirects]]
   from = "/newlp/*"
   to = "/newlp/:splat"
   status = 200
