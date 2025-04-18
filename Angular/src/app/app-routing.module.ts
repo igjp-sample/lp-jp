@@ -8,7 +8,7 @@ import { UitoolsComponent } from './uitools/uitools.component';
 import { Test1Component } from './test1/test1.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'uitools', pathMatch: 'full' },
+  { path: '', component: UitoolsComponent, data: { text: 'uitools' } },
   { path: 'error', component: UncaughtErrorComponent },
   { path: 'uitools', component: UitoolsComponent, data: { text: 'uitools' } },
   { path: 'test1', component: Test1Component, data: { text: 'test1' } },
