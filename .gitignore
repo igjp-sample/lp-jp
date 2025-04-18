@@ -49,3 +49,5 @@ testem.log
 Thumbs.db
 
 netlify.toml
+# Local Netlify folder
+.netlify
